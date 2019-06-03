@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "commit:msg": "commitlint -e $GIT_PARAMS",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +21,10 @@
   "homepage": "https://github.com/AlexZ33/simple-webpack#readme",
   "dependencies": {
     "mini-css-extract-plugin": "^0.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
   }
 }

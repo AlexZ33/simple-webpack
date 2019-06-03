@@ -16,7 +16,7 @@ log('webpack')
    const { default: _ } = await import ('lodash')
    element.innerHTML = _.join(['hello!', 'dynamic', 'imports', 'async', ' '])
 
-   return element
+   return element;
  }
 
  btn.addEventListener('click', () => {
